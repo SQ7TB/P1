@@ -10,7 +10,16 @@ function createLink(item, className = '') {
   const link = document.createElement('a');
   link.href = item.href;
   link.className = className;
-  link.textContent = item.label;
+  const copy = document.createElement('span');
+  const label = document.createElement('strong');
+  label.textContent = item.label;
+  copy.append(label);
+  if (item.detail) {
+    const detail = document.createElement('small');
+    detail.textContent = item.detail;
+    copy.append(detail);
+  }
+  link.append(copy);
   return link;
 }
 
@@ -88,13 +97,19 @@ function renderNews(posts) {
 
 function renderParentInfo(data) {
   const shortcuts = document.querySelector('#shortcuts');
-  shortcuts.replaceChildren(...data.shortcuts.map((item) => createLink(item, 'side-link')));
+  const icons = {
+    news: '◖', recruitment: '★', menu: '♨', gallery: '▣',
+    clock: '◷', wallet: '▱', document: '▤', phone: '☎'
+  };
+  shortcuts.replaceChildren(...data.shortcuts.map((item) => {
+    const link = createLink(item, `side-link side-link--${item.tone}`);
+    link.dataset.icon = icons[item.icon] || '•';
+    return link;
+  }));
   const parents = document.querySelector('#parent-links');
   parents.replaceChildren(...data.parentLinks.map((item) => {
-    const link = createLink(item, 'parent-link');
-    const detail = document.createElement('small');
-    detail.textContent = item.detail;
-    link.append(detail);
+    const link = createLink(item, `parent-link parent-link--${item.tone}`);
+    link.dataset.icon = icons[item.icon] || '•';
     return link;
   }));
   const contact = document.querySelector('#contact-details');

@@ -1,15 +1,15 @@
 {
   "shortcuts": [
-    { "label": "Aktualności", "href": "#aktualnosci" },
-    { "label": "Rekrutacja", "href": "#rekrutacja" },
-    { "label": "Jadłospis", "href": "#jadlospis" },
-    { "label": "Dokumenty", "href": "#dokumenty" }
+    { "label": "Aktualności", "detail": "Co słychać w przedszkolu", "icon": "news", "tone": "blue", "href": "#aktualnosci" },
+    { "label": "Rekrutacja", "detail": "Dołącz do naszej rodziny", "icon": "recruitment", "tone": "mint", "href": "#rekrutacja" },
+    { "label": "Jadłospis", "detail": "Smacznie i zdrowo", "icon": "menu", "tone": "yellow", "href": "#jadlospis" },
+    { "label": "Galeria", "detail": "Nasze wspólne chwile", "icon": "gallery", "tone": "pink", "href": "#galeria" }
   ],
   "parentLinks": [
-    { "label": "Godziny pracy", "detail": "6:00–17:00", "href": "#godziny" },
-    { "label": "Opłaty", "detail": "Informacje dla rodziców", "href": "#oplaty" },
-    { "label": "Dokumenty", "detail": "Pliki do pobrania", "href": "#dokumenty" },
-    { "label": "Kontakt", "detail": "Napisz lub zadzwoń", "href": "#kontakt" }
+    { "label": "Godziny pracy", "detail": "Pon.–pt. 6:00–17:00", "icon": "clock", "tone": "blue", "href": "#godziny" },
+    { "label": "Opłaty", "detail": "Terminy i stawki", "icon": "wallet", "tone": "yellow", "href": "#oplaty" },
+    { "label": "Dokumenty", "detail": "Pliki do pobrania", "icon": "document", "tone": "mint", "href": "#dokumenty" },
+    { "label": "Kontakt", "detail": "Napisz lub zadzwoń", "icon": "phone", "tone": "pink", "href": "#kontakt" }
   ],
   "contact": {
     "name": "Przedszkole nr 1 z grupą żłobkową w Konstantynowie Łódzkim",

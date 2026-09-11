@@ -1,9 +1,22 @@
 [
   {
+    "id": "rozpoczecie-roku",
+    "date": "2026-09-12",
+    "displayDate": "12 września 2026",
+    "title": "Rozpoczęcie roku przedszkolnego",
+    "excerpt": "Za nami pierwsze radosne dni pełne spotkań, zabawy i poznawania nowych koleżanek oraz kolegów.",
+    "category": "Wydarzenia",
+    "thumbnail": "assets/images/news-welcome.svg",
+    "thumbnailAlt": "Pastelowa tęcza witająca dzieci",
+    "url": "#",
+    "showOnHomepage": true,
+    "sourceType": "news"
+  },
+  {
     "id": "nowy-jadlospis-15-19-wrzesnia",
     "date": "2026-09-11",
     "displayDate": "11 września 2026",
-    "title": "Nowy jadłospis na tydzień",
+    "title": "Jadłospis na najbliższy tydzień",
     "excerpt": "Zapraszamy do zapoznania się z jadłospisem przygotowanym na dni 15–19 września. Życzymy dzieciom smacznego!",
     "category": "Jadłospis",
     "thumbnail": "assets/images/news-menu.svg",
@@ -13,38 +26,25 @@
     "sourceType": "menu"
   },
   {
-    "id": "zebranie-organizacyjne",
-    "date": "2026-09-08",
-    "displayDate": "8 września 2026",
-    "title": "Zebranie organizacyjne dla rodziców",
-    "excerpt": "Serdecznie zapraszamy rodziców na spotkanie dotyczące organizacji nowego roku przedszkolnego.",
-    "category": "Ogłoszenia",
-    "thumbnail": null,
-    "thumbnailAlt": "",
-    "url": "#",
-    "showOnHomepage": true,
-    "sourceType": "news"
-  },
-  {
-    "id": "poznajemy-nasze-grupy",
+    "id": "jesienny-spacer",
     "date": "2026-09-04",
     "displayDate": "4 września 2026",
-    "title": "Poznajemy nasze grupy",
-    "excerpt": "Żabki, Motylki, Pszczółki i Biedronki rozpoczęły wspólną przygodę. Przed nami mnóstwo zabawy i odkrywania świata.",
+    "title": "Jesienny spacer grupowy",
+    "excerpt": "Nasze przedszkolaki wypatrywały pierwszych oznak jesieni i zebrały kolorowe skarby natury.",
     "category": "Z życia przedszkola",
     "thumbnail": "assets/images/news-groups.svg",
-    "thumbnailAlt": "Pastelowe klocki i dziecięca piłka",
+    "thumbnailAlt": "Dziecięce klocki w jesiennych kolorach",
     "url": "#grupy",
     "showOnHomepage": true,
     "sourceType": "news"
   },
   {
-    "id": "bezpieczna-droga",
+    "id": "spotkanie-z-rodzicami",
     "date": "2026-09-02",
     "displayDate": "2 września 2026",
-    "title": "Bezpieczna droga do przedszkola",
-    "excerpt": "Przypominamy najważniejsze zasady bezpiecznego przyprowadzania i odbierania dzieci z naszej placówki.",
-    "category": "Dla rodziców",
+    "title": "Spotkanie z rodzicami",
+    "excerpt": "Zapraszamy na spotkanie organizacyjne, podczas którego opowiemy o planach na nadchodzące miesiące.",
+    "category": "Ogłoszenia",
     "thumbnail": null,
     "thumbnailAlt": "",
     "url": "#",
@@ -61,7 +61,7 @@
     "thumbnail": "assets/images/news-welcome.svg",
     "thumbnailAlt": "Słońce nad pastelową tęczą",
     "url": "#",
-    "showOnHomepage": true,
+    "showOnHomepage": false,
     "sourceType": "news"
   }
 ]
