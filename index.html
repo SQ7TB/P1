@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Strona Przedszkola nr 1 z grupą żłobkową w Konstantynowie Łódzkim.">
+  <title>Przedszkole nr 1 w Konstantynowie Łódzkim</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" type="module"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Przejdź do treści</a>
+  <div class="topbar">
+    <div class="shell topbar__inner">
+      <address class="topbar__contact">
+        <a href="tel:+48420000000">☎ <span>+48 42 000 00 00</span></a>
+        <a href="mailto:kontakt@przedszkole1.example.pl">✉ <span>kontakt@przedszkole1.example.pl</span></a>
+        <span>◷ pon.–pt. 6:00–17:00</span>
+      </address>
+      <nav aria-label="Linki formalne"><a href="#">BIP</a><a href="#">RODO</a><a href="#">Deklaracja dostępności</a></nav>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="shell brand">
+      <a class="brand__link" href="index.html" aria-label="Strona główna Przedszkola nr 1">
+        <img src="assets/images/logo.svg" alt="" width="86" height="78">
+        <span><strong>Przedszkole nr 1 z grupą żłobkową</strong><small>w Konstantynowie Łódzkim</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu"><span class="menu-toggle__icon" aria-hidden="true"></span><span>Menu</span></button>
+    </div>
+    <nav class="main-nav" aria-label="Główna nawigacja">
+      <ul class="shell" id="main-menu">
+        <li><a aria-current="page" href="index.html">Start</a></li><li><a href="#o-przedszkolu">O przedszkolu</a></li><li><a href="#aktualnosci">Aktualności</a></li><li><a href="#dla-rodzicow">Dla rodziców</a></li><li><a href="#grupy">Grupy</a></li><li><a href="#jadlospis">Jadłospis</a></li><li><a href="#rekrutacja">Rekrutacja</a></li><li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="shell hero__inner">
+        <div><p class="eyebrow">Miejsce pełne troski i odkryć</p><h1 id="hero-title">Tu rosną wielkie możliwości!</h1><p class="hero__subtitle">Bezpiecznie <span>•</span> Radośnie <span>•</span> Razem każdego dnia</p><a class="button" href="#aktualnosci">Zobacz, co u nas słychać</a></div>
+        <img src="assets/images/hero.svg" alt="Wesołe dzieci bawiące się obok przedszkola" width="490" height="270">
+      </div>
+    </section>
+    <section class="notice" aria-live="polite"><div class="shell notice__inner" id="important-message"><span class="skeleton">Wczytywanie ważnej informacji…</span></div></section>
+
+    <div class="shell page-grid">
+      <aside class="sidebar sidebar--left" aria-label="Na skróty i grupy">
+        <section class="side-card"><h2>Na skróty</h2><nav id="shortcuts" aria-label="Na skróty"></nav></section>
+        <section class="side-card" id="grupy"><h2>Nasze grupy</h2><div id="groups"></div></section>
+      </aside>
+
+      <section class="news" id="aktualnosci" aria-labelledby="news-title">
+        <div class="section-heading"><div><p class="eyebrow">Co u nas słychać?</p><h2 id="news-title">Aktualności</h2></div><span class="section-heading__decoration" aria-hidden="true">✦</span></div>
+        <div class="news-list" id="news-list"><p class="loading">Wczytywanie aktualności…</p></div>
+      </section>
+
+      <aside class="sidebar sidebar--right" id="dla-rodzicow" aria-label="Informacje dla rodziców">
+        <section class="side-card side-card--mint"><h2>Dla rodziców</h2><nav id="parent-links" aria-label="Dla rodziców"></nav></section>
+        <section class="contact-card" id="kontakt"><span class="contact-card__icon" aria-hidden="true">⌂</span><h2>Kontakt</h2><div id="contact-details"></div></section>
+        <section class="menu-card" id="jadlospis"><p class="eyebrow">Smacznie i zdrowo</p><h2>Jadłospis</h2><div id="menu-info"></div></section>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="shell footer__inner"><div><strong>Przedszkole nr 1 z grupą żłobkową</strong><p>w Konstantynowie Łódzkim</p><p>ul. Przykładowa 1, 95-050 Konstantynów Łódzki</p></div><nav aria-label="Linki w stopce"><a href="#">BIP</a><a href="#">RODO</a><a href="#">Deklaracja dostępności</a><a href="#">Polityka prywatności</a></nav></div><p class="footer__copy">© <span id="current-year"></span> Przedszkole nr 1. Wszystkie prawa zastrzeżone.</p></footer>
+</body>
+</html>
