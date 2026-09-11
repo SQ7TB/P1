@@ -1,0 +1,67 @@
+[
+  {
+    "id": "rozpoczecie-roku",
+    "date": "2026-09-12",
+    "displayDate": "12 września 2026",
+    "title": "Rozpoczęcie roku przedszkolnego",
+    "excerpt": "Za nami pierwsze radosne dni pełne spotkań, zabawy i poznawania nowych koleżanek oraz kolegów.",
+    "category": "Wydarzenia",
+    "thumbnail": "assets/images/news-welcome.svg",
+    "thumbnailAlt": "Pastelowa tęcza witająca dzieci",
+    "url": "#",
+    "showOnHomepage": true,
+    "sourceType": "news"
+  },
+  {
+    "id": "nowy-jadlospis-15-19-wrzesnia",
+    "date": "2026-09-11",
+    "displayDate": "11 września 2026",
+    "title": "Jadłospis na najbliższy tydzień",
+    "excerpt": "Zapraszamy do zapoznania się z jadłospisem przygotowanym na dni 15–19 września. Życzymy dzieciom smacznego!",
+    "category": "Jadłospis",
+    "thumbnail": "assets/images/news-menu.svg",
+    "thumbnailAlt": "Kolorowa miseczka z owocami",
+    "url": "#jadlospis",
+    "showOnHomepage": true,
+    "sourceType": "menu"
+  },
+  {
+    "id": "jesienny-spacer",
+    "date": "2026-09-04",
+    "displayDate": "4 września 2026",
+    "title": "Jesienny spacer grupowy",
+    "excerpt": "Nasze przedszkolaki wypatrywały pierwszych oznak jesieni i zebrały kolorowe skarby natury.",
+    "category": "Z życia przedszkola",
+    "thumbnail": "assets/images/news-groups.svg",
+    "thumbnailAlt": "Dziecięce klocki w jesiennych kolorach",
+    "url": "#grupy",
+    "showOnHomepage": true,
+    "sourceType": "news"
+  },
+  {
+    "id": "spotkanie-z-rodzicami",
+    "date": "2026-09-02",
+    "displayDate": "2 września 2026",
+    "title": "Spotkanie z rodzicami",
+    "excerpt": "Zapraszamy na spotkanie organizacyjne, podczas którego opowiemy o planach na nadchodzące miesiące.",
+    "category": "Ogłoszenia",
+    "thumbnail": null,
+    "thumbnailAlt": "",
+    "url": "#",
+    "showOnHomepage": true,
+    "sourceType": "news"
+  },
+  {
+    "id": "witamy-po-wakacjach",
+    "date": "2026-09-01",
+    "displayDate": "1 września 2026",
+    "title": "Witamy po wakacjach!",
+    "excerpt": "Z radością rozpoczynamy nowy rok pełen przyjaźni, ciekawych zajęć i małych, codziennych odkryć.",
+    "category": "Wydarzenia",
+    "thumbnail": "assets/images/news-welcome.svg",
+    "thumbnailAlt": "Słońce nad pastelową tęczą",
+    "url": "#",
+    "showOnHomepage": false,
+    "sourceType": "news"
+  }
+]
