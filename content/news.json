@@ -1,0 +1,67 @@
+[
+  {
+    "id": "nowy-jadlospis-15-19-wrzesnia",
+    "date": "2026-09-11",
+    "displayDate": "11 września 2026",
+    "title": "Nowy jadłospis na tydzień",
+    "excerpt": "Zapraszamy do zapoznania się z jadłospisem przygotowanym na dni 15–19 września. Życzymy dzieciom smacznego!",
+    "category": "Jadłospis",
+    "thumbnail": "assets/images/news-menu.svg",
+    "thumbnailAlt": "Kolorowa miseczka z owocami",
+    "url": "#jadlospis",
+    "showOnHomepage": true,
+    "sourceType": "menu"
+  },
+  {
+    "id": "zebranie-organizacyjne",
+    "date": "2026-09-08",
+    "displayDate": "8 września 2026",
+    "title": "Zebranie organizacyjne dla rodziców",
+    "excerpt": "Serdecznie zapraszamy rodziców na spotkanie dotyczące organizacji nowego roku przedszkolnego.",
+    "category": "Ogłoszenia",
+    "thumbnail": null,
+    "thumbnailAlt": "",
+    "url": "#",
+    "showOnHomepage": true,
+    "sourceType": "news"
+  },
+  {
+    "id": "poznajemy-nasze-grupy",
+    "date": "2026-09-04",
+    "displayDate": "4 września 2026",
+    "title": "Poznajemy nasze grupy",
+    "excerpt": "Żabki, Motylki, Pszczółki i Biedronki rozpoczęły wspólną przygodę. Przed nami mnóstwo zabawy i odkrywania świata.",
+    "category": "Z życia przedszkola",
+    "thumbnail": "assets/images/news-groups.svg",
+    "thumbnailAlt": "Pastelowe klocki i dziecięca piłka",
+    "url": "#grupy",
+    "showOnHomepage": true,
+    "sourceType": "news"
+  },
+  {
+    "id": "bezpieczna-droga",
+    "date": "2026-09-02",
+    "displayDate": "2 września 2026",
+    "title": "Bezpieczna droga do przedszkola",
+    "excerpt": "Przypominamy najważniejsze zasady bezpiecznego przyprowadzania i odbierania dzieci z naszej placówki.",
+    "category": "Dla rodziców",
+    "thumbnail": null,
+    "thumbnailAlt": "",
+    "url": "#",
+    "showOnHomepage": true,
+    "sourceType": "news"
+  },
+  {
+    "id": "witamy-po-wakacjach",
+    "date": "2026-09-01",
+    "displayDate": "1 września 2026",
+    "title": "Witamy po wakacjach!",
+    "excerpt": "Z radością rozpoczynamy nowy rok pełen przyjaźni, ciekawych zajęć i małych, codziennych odkryć.",
+    "category": "Wydarzenia",
+    "thumbnail": "assets/images/news-welcome.svg",
+    "thumbnailAlt": "Słońce nad pastelową tęczą",
+    "url": "#",
+    "showOnHomepage": true,
+    "sourceType": "news"
+  }
+]

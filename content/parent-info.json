@@ -1,0 +1,21 @@
+{
+  "shortcuts": [
+    { "label": "Aktualności", "href": "#aktualnosci" },
+    { "label": "Rekrutacja", "href": "#rekrutacja" },
+    { "label": "Jadłospis", "href": "#jadlospis" },
+    { "label": "Dokumenty", "href": "#dokumenty" }
+  ],
+  "parentLinks": [
+    { "label": "Godziny pracy", "detail": "6:00–17:00", "href": "#godziny" },
+    { "label": "Opłaty", "detail": "Informacje dla rodziców", "href": "#oplaty" },
+    { "label": "Dokumenty", "detail": "Pliki do pobrania", "href": "#dokumenty" },
+    { "label": "Kontakt", "detail": "Napisz lub zadzwoń", "href": "#kontakt" }
+  ],
+  "contact": {
+    "name": "Przedszkole nr 1 z grupą żłobkową w Konstantynowie Łódzkim",
+    "address": "ul. Przykładowa 1, 95-050 Konstantynów Łódzki",
+    "phone": "+48 42 000 00 00",
+    "email": "kontakt@przedszkole1.example.pl",
+    "openingHours": "pon.–pt. 6:00–17:00"
+  }
+}
