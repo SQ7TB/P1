@@ -29,7 +29,10 @@ function renderNotice(data) {
   const icon = document.createElement('span');
   icon.className = 'notice__icon';
   icon.setAttribute('aria-hidden', 'true');
-  icon.textContent = '!';
+  const image = document.createElement('img');
+  image.src = 'assets/ui/megaphone.png';
+  image.alt = '';
+  icon.append(image);
   const copy = document.createElement('p');
   const label = document.createElement('strong');
   label.textContent = `${data.label}: `;
@@ -43,7 +46,7 @@ function renderGroups(groups) {
     const item = document.createElement('div');
     item.className = `group group--${group.icon}`;
     const image = document.createElement('img');
-    image.src = `assets/icons/${group.icon}.svg`;
+    image.src = `assets/groups/${group.icon}.png`;
     image.alt = group.alt;
     image.width = 42;
     image.height = 42;
@@ -98,18 +101,18 @@ function renderNews(posts) {
 function renderParentInfo(data) {
   const shortcuts = document.querySelector('#shortcuts');
   const icons = {
-    news: '◖', recruitment: '★', menu: '♨', gallery: '▣',
-    clock: '◷', wallet: '▱', document: '▤', phone: '☎'
+    news: 'news', recruitment: 'recruitment', menu: 'menu', gallery: 'gallery',
+    clock: 'clock', coins: 'coins', document: 'document', phone: 'phone'
   };
   shortcuts.replaceChildren(...data.shortcuts.map((item) => {
     const link = createLink(item, `side-link side-link--${item.tone}`);
-    link.dataset.icon = icons[item.icon] || '•';
+    link.style.setProperty('--icon-image', `url("assets/ui/${icons[item.icon]}.png")`);
     return link;
   }));
   const parents = document.querySelector('#parent-links');
   parents.replaceChildren(...data.parentLinks.map((item) => {
     const link = createLink(item, `parent-link parent-link--${item.tone}`);
-    link.dataset.icon = icons[item.icon] || '•';
+    link.style.setProperty('--icon-image', `url("assets/ui/${icons[item.icon]}.png")`);
     return link;
   }));
   const contact = document.querySelector('#contact-details');
@@ -123,7 +126,7 @@ function renderParentInfo(data) {
   email.textContent = data.contact.email;
   const hours = document.createElement('p');
   hours.textContent = data.contact.openingHours;
-  contact.replaceChildren(address, phone, email, hours);
+  if (contact) contact.replaceChildren(address, phone, email, hours);
 }
 
 function renderMenu(data) {
@@ -134,7 +137,7 @@ function renderMenu(data) {
   link.className = 'read-more';
   link.href = data.current.file;
   link.textContent = 'Zobacz jadłospis';
-  target.replaceChildren(period, link);
+  if (target) target.replaceChildren(period, link);
 }
 
 function showLoadError(error) {
