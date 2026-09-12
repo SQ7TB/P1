@@ -13,8 +13,10 @@
   <title>Przedszkole nr 1 w Konstantynowie Łódzkim</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/app.js" type="module"></script>
+  <script src="js/editor-login.js" defer></script>
 </head>
 <body>
+  <div class="editor-bar" id="editor-bar" hidden><span>Edycja włączona · redaktor</span><button id="editor-logout" type="button">Wyloguj</button></div>
   <a class="skip-link" href="#main-content">Przejdź do treści</a>
   <div class="topbar">
     <div class="shell topbar__inner">
@@ -61,6 +63,18 @@
     </div>
   </main>
 
-  <footer class="footer"><div class="shell footer__inner"><div><strong>Przedszkole nr 1 z grupą żłobkową</strong><p>w Konstantynowie Łódzkim</p><address>ul. Przykładowa 1, 95-050 Konstantynów Łódzki<br>NIP: 000-000-00-00 · REGON: 000000000</address></div><div class="footer__slogan">Razem tworzymy<br><span>szczęśliwe dzieciństwo ♥</span></div><div class="footer__links"><nav aria-label="Linki w stopce"><a href="#">BIP</a><a href="#">RODO</a><a href="#">Deklaracja dostępności</a><a href="#">Polityka prywatności</a></nav><p>© <span id="current-year"></span> Przedszkole nr 1</p></div></div></footer>
+  <footer class="footer"><div class="shell footer__inner"><div><strong>Przedszkole nr 1 z grupą żłobkową</strong><p>w Konstantynowie Łódzkim</p><address>ul. Przykładowa 1, 95-050 Konstantynów Łódzki<br>NIP: 000-000-00-00 · REGON: 000000000</address></div><div class="footer__slogan">Razem tworzymy<br><span>szczęśliwe dzieciństwo ♥</span></div><div class="footer__links"><nav aria-label="Linki w stopce"><a href="#">BIP</a><a href="#">RODO</a><a href="#">Deklaracja dostępności</a><a href="#">Polityka prywatności</a></nav><p>© <span id="current-year"></span> Przedszkole nr 1 <button class="editor-entry" id="editor-entry" type="button" aria-label="Logowanie redaktora">*</button></p></div></div></footer>
+
+  <dialog class="editor-dialog" id="editor-dialog" aria-labelledby="editor-dialog-title">
+    <button class="editor-dialog__close" id="editor-dialog-close" type="button" aria-label="Zamknij">×</button>
+    <h2 id="editor-dialog-title">Logowanie redaktora</h2>
+    <form id="editor-login-form">
+      <label for="editor-username">Nazwa użytkownika</label>
+      <input id="editor-username" name="username" type="text" autocomplete="username" required>
+      <label for="editor-password">Hasło</label>
+      <input id="editor-password" name="password" type="password" autocomplete="current-password" required>
+      <button type="submit">Zaloguj</button>
+    </form>
+  </dialog>
 </body>
 </html>
