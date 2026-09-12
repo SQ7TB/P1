@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <script>
+    if (sessionStorage.getItem('p1-poc-access') !== 'granted') {
+      window.location.replace('index.html');
+    }
+  </script>
+  <meta name="description" content="Strona Przedszkola nr 1 z grupą żłobkową w Konstantynowie Łódzkim.">
+  <title>Przedszkole nr 1 w Konstantynowie Łódzkim</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" type="module"></script>
+  <script src="js/editor-login.js" defer></script>
+</head>
+<body>
+  <div class="editor-bar" id="editor-bar" hidden><span>Edycja włączona · redaktor</span><button id="editor-logout" type="button">Wyloguj</button></div>
+  <a class="skip-link" href="#main-content">Przejdź do treści</a>
+  <div class="topbar">
+    <div class="shell topbar__inner">
+      <address><a href="tel:+48420000000"><span aria-hidden="true">☎</span> +48 42 000 00 00</a><a href="mailto:kontakt@przedszkole1.example.pl"><span aria-hidden="true">✉</span> kontakt@przedszkole1.example.pl</a><span><span aria-hidden="true">◷</span> pon.–pt. 6:00–17:00</span></address>
+      <nav aria-label="Linki formalne"><a href="#">BIP</a><a href="#">RODO</a><a href="#">Deklaracja dostępności</a><a class="accessibility-link" href="#" aria-label="Ułatwienia dostępu">◐</a></nav>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="shell brand">
+      <a class="brand__link" href="index.html" aria-label="Strona główna Przedszkola nr 1"><img src="assets/illustrations/deco-house.png" alt="" width="150" height="92"><span><strong>Przedszkole nr 1 z grupą żłobkową</strong><small>w Konstantynowie Łódzkim</small><em>Każde dziecko jest dla nas ważne</em></span></a>
+      <div class="brand__slogan" aria-hidden="true"><span>Szczęśliwe dzieci tworzą lepszy świat!</span><img src="assets/illustrations/deco-sun-plants.png" alt="" width="178" height="92"></div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu"><span class="menu-toggle__icon" aria-hidden="true"></span><span>Menu</span></button>
+    </div>
+    <nav class="main-nav shell" aria-label="Główna nawigacja">
+      <ul id="main-menu"><li><a aria-current="page" href="index.html">Start</a></li><li><a href="#o-przedszkolu">O przedszkolu</a></li><li><a href="#aktualnosci">Aktualności</a></li><li><a href="#dla-rodzicow">Dla rodziców</a></li><li><a href="#grupy">Grupy</a></li><li><a href="#jadlospis">Jadłospis</a></li><li><a href="#rekrutacja">Rekrutacja</a></li><li><a href="#kontakt">Kontakt</a></li></ul>
+      <span class="search" aria-hidden="true">⌕</span>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <h1 class="sr-only" id="hero-title">Tu rosną wielkie możliwości!</h1>
+      <p class="sr-only">Bezpiecznie, radośnie, razem każdego dnia.</p>
+    </section>
+    <section class="notice shell" aria-live="polite"><div id="important-message"><span class="skeleton">Wczytywanie ważnej informacji…</span></div><span class="notice__arrow" aria-hidden="true">→</span></section>
+
+    <div class="shell page-grid">
+      <aside class="left-column" aria-label="Na skróty i grupy">
+        <section class="shortcuts"><div class="card-heading"><div><h2>Na skróty</h2><p>Najczęściej odwiedzane</p></div></div><nav id="shortcuts" aria-label="Na skróty"></nav></section>
+        <section class="panel groups-panel" id="grupy"><div class="card-heading"><div><h2>Nasze grupy</h2><p>Poznaj nasze przedszkolaki</p></div></div><div id="groups"></div></section>
+      </aside>
+
+      <section class="news" id="aktualnosci" aria-labelledby="news-title">
+        <header class="news__heading"><div class="card-heading"><img class="heading-icon" src="assets/ui/news.png" alt="" width="42" height="42"><div><h2 id="news-title">Aktualności</h2><p>Bądź na bieżąco z życiem naszego przedszkola</p></div></div><a href="#">Zobacz wszystkie aktualności <span aria-hidden="true">→</span></a></header>
+        <div class="news-list" id="news-list"><p class="loading">Wczytywanie aktualności…</p></div>
+      </section>
+
+      <aside class="right-column" id="dla-rodzicow" aria-label="Informacje dla rodziców">
+        <section class="panel parents-panel"><div class="card-heading"><img class="heading-icon" src="assets/ui/heart.png" alt="" width="42" height="42"><div><h2>Dla rodziców</h2><p>Najważniejsze informacje<br>w jednym miejscu</p></div></div><nav id="parent-links" aria-label="Dla rodziców"></nav></section>
+        <section class="question-card" id="kontakt"><div><h2>Masz pytania?</h2><p>Jesteśmy tutaj,<br>aby pomóc!</p><a href="mailto:kontakt@przedszkole1.example.pl">Skontaktuj się z nami <span aria-hidden="true">→</span></a></div><img src="assets/illustrations/parent-child.png" alt="Rodzic z dzieckiem" width="125" height="135"></section>
+        <section class="panel location-card"><div><img class="location-pin" src="assets/ui/location.png" alt="" width="26" height="26"><h2>Przedszkole nr 1</h2><address>ul. Przykładowa 1<br>95-050 Konstantynów Łódzki</address><a href="#">Zobacz na mapie <span aria-hidden="true">→</span></a></div><img src="assets/illustrations/map-card.png" alt="Dekoracyjny plan okolicy z zaznaczoną lokalizacją przedszkola" width="112" height="115"></section>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="shell footer__inner"><div><strong>Przedszkole nr 1 z grupą żłobkową</strong><p>w Konstantynowie Łódzkim</p><address>ul. Przykładowa 1, 95-050 Konstantynów Łódzki<br>NIP: 000-000-00-00 · REGON: 000000000</address></div><div class="footer__slogan">Razem tworzymy<br><span>szczęśliwe dzieciństwo ♥</span></div><div class="footer__links"><nav aria-label="Linki w stopce"><a href="#">BIP</a><a href="#">RODO</a><a href="#">Deklaracja dostępności</a><a href="#">Polityka prywatności</a></nav><p>© <span id="current-year"></span> Przedszkole nr 1 <button class="editor-entry" id="editor-entry" type="button" aria-label="Logowanie redaktora">*</button></p></div></div></footer>
+
+  <dialog class="editor-dialog" id="editor-dialog" aria-labelledby="editor-dialog-title">
+    <button class="editor-dialog__close" id="editor-dialog-close" type="button" aria-label="Zamknij">×</button>
+    <h2 id="editor-dialog-title">Logowanie redaktora</h2>
+    <form id="editor-login-form">
+      <label for="editor-username">Nazwa użytkownika</label>
+      <input id="editor-username" name="username" type="text" autocomplete="username" required>
+      <label for="editor-password">Hasło</label>
+      <input id="editor-password" name="password" type="password" autocomplete="current-password" required>
+      <button type="submit">Zaloguj</button>
+    </form>
+  </dialog>
+</body>
+</html>
