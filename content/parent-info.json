@@ -7,7 +7,7 @@
   ],
   "parentLinks": [
     { "label": "Godziny pracy", "detail": "Pon.–pt. 6:00–17:00", "icon": "clock", "tone": "blue", "href": "#godziny" },
-    { "label": "Opłaty", "detail": "Terminy i stawki", "icon": "wallet", "tone": "yellow", "href": "#oplaty" },
+    { "label": "Opłaty", "detail": "Terminy i stawki", "icon": "coins", "tone": "yellow", "href": "#oplaty" },
     { "label": "Dokumenty", "detail": "Pliki do pobrania", "icon": "document", "tone": "mint", "href": "#dokumenty" },
     { "label": "Kontakt", "detail": "Napisz lub zadzwoń", "icon": "phone", "tone": "pink", "href": "#kontakt" }
   ],
